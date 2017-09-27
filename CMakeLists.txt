@@ -3,5 +3,5 @@ project(pacman)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES main.cpp Player.hpp Enemy.cpp Enemy.hpp RealPlayer.cpp RealPlayer.hpp)
 add_executable(pacman ${SOURCE_FILES})
