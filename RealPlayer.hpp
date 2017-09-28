@@ -8,9 +8,12 @@
 #include "Player.hpp"
 
 class RealPlayer: public Player {
+    int Lifes;
 public:
-    bool Move();
-    void ChangeDirection();
+    explicit RealPlayer(int x = 0, int y = 0);
+    void ChangeDirection(char dir);
+    int GetLifes() const;
+    bool DecreaseLifes();
 };
 
 
